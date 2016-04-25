@@ -1,19 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Lucas Wojcik Ruby/Elixir
-email: lukasz.wojcik88@wp.pl
-description: > # this means to ignore newlines until "baseurl:"
-  My blog about Ruby and Elixir
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lukasz-wojcik.github.io" # the base hostname & protocol for your site
-twitter_username: sonar0007
-github_username:  lukasz-wojcik
+title: Lukasz Wojcik Ruby/Elixir
+description: "Blog about Ruby and Elixir development"
+url: "https://lukasz-wojcik.github.io/"
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Łukasz Wójcik'
+  email: lukasz.wojcik88@wp.pl
+  twitter_username: sonar0007
+  # facebook_username: sonar0007
+  github_username:  lukasz-wojcik
+  linkedin_username: "łukasz-wójcik-824803ab"
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
