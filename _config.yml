@@ -1,6 +1,6 @@
 # Site settings
-title: Lukasz Wojcik Ruby/Elixir
-description: "Blog about Ruby and Elixir development"
+title: Hey I am Łukasz!
+description: "Welcome to my space focused around Ruby"
 url: "https://lukasz-wojcik.github.io/"
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
@@ -10,9 +10,8 @@ author:
   name: 'Łukasz Wójcik'
   email: lukasz.karol.wojcik@outlook.com
   twitter_username: sonar0007
-  # facebook_username: sonar0007
   github_username:  lukasz-wojcik
-  linkedin_username: "łukasz-wójcik-824803ab"
+  linkedin_username: "lukasz-wojcik-824803ab"
 
 defaults:
   -
